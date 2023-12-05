@@ -1,8 +1,7 @@
 const User = require("../models/User");
-
 const bcrypt = require("bcryptjs");
-const jwt = require("jwtwebtoken");
-const jwtwebtoken = process.env.JWT_SECRET;
+const jwt = require("jsonwebtoken");
+const jwtSecret = process.env.JWT_SECRET;
 
 // gerar token do usuário
 
